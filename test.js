@@ -24,15 +24,15 @@ const reverseString = require('./reverseString');
 
 test('hello to be olleh', () => {
   expect(reverseString('hello')).toBe('olleh');
-})
+});
 
 test('no word to be empty', () => {
   expect(reverseString('')).toBe('');
-})
+});
 
 test('diferent characters to return it reversed', () => {
   expect(reverseString('18/9^(dW&')).toBe('&Wd(^9/81');
-})
+});
 
 const calculator = require('./calculator');
 
@@ -107,4 +107,27 @@ describe ('multiply', () => {
   });
 })
 
+const capitalize = require('./capitalize');
 
+describe('capitalize', () => {
+  test('hello to be Hello', () => {
+    expect(capitalize('hello')).toBe('Hello');
+  });
+  
+  test('no word to be empty', () => {
+    expect(capitalize('')).toBe('');
+  });
+  
+  
+  test('microverse to be Microverse', () => {
+    expect(capitalize('microverse')).toBe('Microverse');
+  });
+  
+  test('Axel to be Axel', () => {
+    expect(capitalize('Axel')).toBe('Axel');
+  });
+
+  test('45 to be 45', () => {
+    expect(capitalize('45')).toBe('45');
+  });
+});
