@@ -12,4 +12,14 @@ test('Microverse to be 10', () => {
   expect(stringhLength('Microverse')).toEqual(10);
 });
 
-// test('no word to throw an error', )
+test('no word to throw an error', () => {
+  expect(() => stringhLength('').toThrow(Error));
+});
+
+test('Microverses to throw an error', () => {
+  expect(() => stringhLength('Microverses').toThrow(Error));
+});
+
+// test('compiling android goes as expected', () => {
+//   expect(() => compileAndroidCode()).toThrow();
+//   expect(() => compileAndroidCode()).toThrow(Error);
