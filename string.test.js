@@ -1,4 +1,4 @@
-const stringhLength = require('./stringLength');
+const stringhLength = require('./string');
 
 test('hello to be 5', () => {
   expect(stringhLength('hello')).toEqual(5);
@@ -19,7 +19,3 @@ test('no word to throw an error', () => {
 test('Microverses to throw an error', () => {
   expect(() => stringhLength('Microverses').toThrow(Error));
 });
-
-// test('compiling android goes as expected', () => {
-//   expect(() => compileAndroidCode()).toThrow();
-//   expect(() => compileAndroidCode()).toThrow(Error);
