@@ -1,0 +1,22 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stringLength.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelSoler/Testing-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelSoler/Testing-practice/issues"
+  },
+  "homepage": "https://github.com/AxelSoler/Testing-practice#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
